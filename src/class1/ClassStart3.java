@@ -1,6 +1,6 @@
 package class1;
 
-public class ClassStrart3 {
+public class ClassStart3 {
     public static void main(String[] args) {
 
         Student student1;
