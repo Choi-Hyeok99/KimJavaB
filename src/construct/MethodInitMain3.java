@@ -1,16 +1,12 @@
 package construct;
 
-public class MethodInitMain1 {
+public class MethodInitMain3 {
     public static void main(String[] args) {
         MemberInit member1 = new MemberInit();
-        member1.name = "user1";
-        member1.age = 15;
-        member1.grade = 90;
+        member1.initMember("user1" , 15 , 90);
 
         MemberInit member2 = new MemberInit();
-        member2.name = "user2";
-        member2.age = 16;
-        member2.grade = 80;
+        member2.initMember("user2" , 16 , 50);
 
 
         MemberInit[] members = {member1 , member2};
@@ -18,8 +14,5 @@ public class MethodInitMain1 {
         for (MemberInit s : members) {
             System.out.println("이름 : " + s.name + "나이 : " + s.age + "성적 : " + s.grade);
         }
-
-
-
     }
 }
