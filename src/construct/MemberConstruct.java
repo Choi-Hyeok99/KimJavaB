@@ -5,8 +5,14 @@ public class MemberConstruct {
     int age;
     int grade;
 
-    // 생성자는 클래스 이름과 동일 다르면 컴파일 오류 발생
-    // 생성자는 반환타입 x 없다
+
+    // 추가
+    // 오버로딩
+    MemberConstruct(String name , int age){
+        this(name , age , 50); // 변경
+    }
+
+
     MemberConstruct(String name , int age, int grade){
         System.out.println("생성자 호출 name = " + name + "age =" + age + "grade = "+ grade);
         this.name = name;
